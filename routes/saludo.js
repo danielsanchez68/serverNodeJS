@@ -6,12 +6,13 @@ const router = express.Router()
 router.post("/saludo", (req, res) => {
 
     const nombre = req.body.nombre || "mundo"
+    console.log(nombre)
 
     res.json({
-        mensaje: `Hola ${nombre}!`,
+        mensaje: `Holis ${nombre}!`,
+        ts: Date.now(),
         estado: "ok"
     })
-
 })
 
 export default router

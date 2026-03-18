@@ -11,7 +11,7 @@ app.use(express.json())
 
 
 app.get("/", (req, res) => {
-    res.send('Hola!!!')
+    res.send('Hola2!!!')
 })
 
 // rutas
